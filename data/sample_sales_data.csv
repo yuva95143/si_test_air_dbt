@@ -1,0 +1,6 @@
+id,customer_name,product,quantity,price,order_date
+1,John Doe,Widget A,5,29.99,2025-01-15
+2,Jane Smith,Widget B,3,45.50,2025-01-16
+3,Bob Johnson,Widget A,2,29.99,2025-01-17
+4,Alice Brown,Widget C,7,15.25,2025-01-18
+5,Charlie Wilson,Widget B,4,45.50,2025-01-19

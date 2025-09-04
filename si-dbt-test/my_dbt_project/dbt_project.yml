@@ -1,0 +1,30 @@
+name: 'si_dbt_pipeline'
+version: '1.0.0'
+config-version: 2
+
+profile: 'si_dbt_test'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]  
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  si_dbt_pipeline:
+    generated:
+      +materialized: table
+      +tags: ["ai_generated"]
+    staging:
+      +materialized: view
+      +tags: ["staging"]
+
+seeds:
+  si_dbt_pipeline:
+    +quote_columns: false

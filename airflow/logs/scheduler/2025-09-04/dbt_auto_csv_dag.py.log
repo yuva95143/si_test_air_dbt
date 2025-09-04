@@ -1,0 +1,330 @@
+[2025-09-04T14:14:57.476+0000] {processor.py:186} INFO - Started process (PID=196895) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:14:57.477+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:14:57.479+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.479+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:14:57.504+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:14:57.648+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.647+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:dbt_auto_csv_pipeline
+[2025-09-04T14:14:57.660+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.660+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:dbt_auto_csv_pipeline
+[2025-09-04T14:14:57.669+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.668+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:dbt_auto_csv_pipeline
+[2025-09-04T14:14:57.685+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.685+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:dbt_auto_csv_pipeline
+[2025-09-04T14:14:57.693+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.693+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:dbt_auto_csv_pipeline
+[2025-09-04T14:14:57.705+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.704+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:dbt_auto_csv_pipeline
+[2025-09-04T14:14:57.713+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.712+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:dbt_auto_csv_pipeline
+[2025-09-04T14:14:57.713+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.713+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:14:57.727+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.727+0000] {dag.py:3262} INFO - Creating ORM DAG for dbt_auto_csv_pipeline
+[2025-09-04T14:14:57.728+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:14:57.728+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:14:57.750+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.279 seconds
+[2025-09-04T14:15:28.667+0000] {processor.py:186} INFO - Started process (PID=196959) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:15:28.669+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:15:28.671+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:15:28.671+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:15:28.690+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:15:28.710+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:15:28.710+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:15:28.720+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:15:28.720+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:15:28.739+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.076 seconds
+[2025-09-04T14:15:58.831+0000] {processor.py:186} INFO - Started process (PID=197014) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:15:58.834+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:15:58.837+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:15:58.836+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:15:58.846+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:15:58.862+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:15:58.862+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:15:58.871+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:15:58.871+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:15:58.889+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.061 seconds
+[2025-09-04T14:16:29.110+0000] {processor.py:186} INFO - Started process (PID=197075) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:16:29.111+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:16:29.112+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:16:29.112+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:16:29.122+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:16:29.140+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:16:29.140+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:16:29.150+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:16:29.150+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:16:29.166+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.060 seconds
+[2025-09-04T14:16:59.272+0000] {processor.py:186} INFO - Started process (PID=197130) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:16:59.273+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:16:59.274+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:16:59.274+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:16:59.283+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:16:59.300+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:16:59.300+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:16:59.311+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:16:59.311+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:16:59.328+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.061 seconds
+[2025-09-04T14:17:29.431+0000] {processor.py:186} INFO - Started process (PID=197230) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:17:29.434+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:17:29.438+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:17:29.438+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:17:29.456+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:17:29.483+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:17:29.483+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:17:29.496+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:17:29.496+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:17:29.517+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.089 seconds
+[2025-09-04T14:17:59.589+0000] {processor.py:186} INFO - Started process (PID=197292) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:17:59.592+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:17:59.593+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:17:59.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:17:59.603+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:17:59.622+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:17:59.622+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:17:59.630+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:17:59.629+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:17:59.646+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.061 seconds
+[2025-09-04T14:18:29.745+0000] {processor.py:186} INFO - Started process (PID=197347) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:18:29.747+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:18:29.749+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:18:29.749+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:18:29.757+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:18:29.773+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:18:29.773+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:18:29.781+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:18:29.781+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:18:29.795+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.054 seconds
+[2025-09-04T14:18:59.905+0000] {processor.py:186} INFO - Started process (PID=197402) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:18:59.908+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:18:59.909+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:18:59.909+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:18:59.917+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:18:59.933+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:18:59.933+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:18:59.940+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:18:59.940+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:18:59.957+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.055 seconds
+[2025-09-04T14:19:30.069+0000] {processor.py:186} INFO - Started process (PID=197457) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:19:30.070+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:19:30.071+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:19:30.071+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:19:30.079+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:19:30.094+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:19:30.094+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:19:30.101+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:19:30.101+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:19:30.117+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.052 seconds
+[2025-09-04T14:20:00.228+0000] {processor.py:186} INFO - Started process (PID=197512) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:20:00.229+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:20:00.231+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:20:00.230+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:20:00.240+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:20:00.258+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:20:00.257+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:20:00.267+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:20:00.267+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:20:00.285+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.062 seconds
+[2025-09-04T14:20:30.378+0000] {processor.py:186} INFO - Started process (PID=197573) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:20:30.381+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:20:30.384+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:20:30.383+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:20:30.391+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:20:30.411+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:20:30.410+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:20:30.421+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:20:30.421+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:20:30.436+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.062 seconds
+[2025-09-04T14:21:00.533+0000] {processor.py:186} INFO - Started process (PID=197702) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:21:00.536+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:21:00.537+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:21:00.537+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:21:00.545+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:21:00.563+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:21:00.562+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:21:00.571+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:21:00.571+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:21:00.588+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.060 seconds
+[2025-09-04T14:21:30.689+0000] {processor.py:186} INFO - Started process (PID=197847) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:21:30.692+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:21:30.693+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:21:30.693+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:21:30.702+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:21:30.719+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:21:30.719+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:21:30.729+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:21:30.728+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:21:30.746+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.061 seconds
+[2025-09-04T14:22:00.853+0000] {processor.py:186} INFO - Started process (PID=197925) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:22:00.856+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:22:00.857+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:22:00.857+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:22:00.867+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:22:00.884+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:22:00.884+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:22:00.892+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:22:00.892+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:22:00.908+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.059 seconds
+[2025-09-04T14:22:31.034+0000] {processor.py:186} INFO - Started process (PID=197991) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:22:31.034+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:22:31.036+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:22:31.036+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:22:31.046+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:22:31.066+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:22:31.066+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:22:31.075+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:22:31.075+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:22:31.098+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.069 seconds
+[2025-09-04T14:23:01.251+0000] {processor.py:186} INFO - Started process (PID=198046) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:23:01.255+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:23:01.260+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:23:01.259+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:23:01.274+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:23:01.293+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:23:01.293+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:23:01.307+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:23:01.307+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:23:01.332+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.093 seconds
+[2025-09-04T14:23:31.453+0000] {processor.py:186} INFO - Started process (PID=198101) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:23:31.455+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:23:31.459+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:23:31.459+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:23:31.474+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:23:31.503+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:23:31.503+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:23:31.521+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:23:31.521+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:23:31.554+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.107 seconds
+[2025-09-04T14:24:01.799+0000] {processor.py:186} INFO - Started process (PID=198158) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:24:01.800+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:24:01.803+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:24:01.802+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:24:01.817+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:24:01.852+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:24:01.852+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:24:01.876+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:24:01.876+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:24:01.905+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.114 seconds
+[2025-09-04T14:24:32.098+0000] {processor.py:186} INFO - Started process (PID=198213) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:24:32.100+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:24:32.102+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:24:32.102+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:24:32.112+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:24:32.128+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:24:32.128+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:24:32.136+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:24:32.136+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:24:32.154+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.061 seconds
+[2025-09-04T14:25:02.286+0000] {processor.py:186} INFO - Started process (PID=198278) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:25:02.290+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:25:02.294+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:25:02.294+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:25:02.308+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:25:02.334+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:25:02.334+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:25:02.347+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:25:02.347+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:25:02.375+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.096 seconds
+[2025-09-04T14:25:32.483+0000] {processor.py:186} INFO - Started process (PID=198333) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:25:32.485+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:25:32.487+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:25:32.486+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:25:32.497+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:25:32.517+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:25:32.517+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:25:32.529+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:25:32.529+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:25:32.551+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.073 seconds
+[2025-09-04T14:26:02.617+0000] {processor.py:186} INFO - Started process (PID=198388) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:26:02.617+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:26:02.619+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:26:02.619+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:26:02.631+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:26:02.652+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:26:02.652+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:26:02.665+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:26:02.665+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:26:02.684+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.076 seconds
+[2025-09-04T14:26:32.797+0000] {processor.py:186} INFO - Started process (PID=198453) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:26:32.800+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:26:32.803+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:26:32.803+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:26:32.813+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:26:32.829+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:26:32.829+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:26:32.837+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:26:32.837+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:26:32.854+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.060 seconds
+[2025-09-04T14:27:02.987+0000] {processor.py:186} INFO - Started process (PID=198520) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:27:02.987+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:27:02.989+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:27:02.989+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:27:02.997+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:27:03.017+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:27:03.017+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:27:03.029+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:27:03.029+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:27:03.048+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.065 seconds
+[2025-09-04T14:27:33.194+0000] {processor.py:186} INFO - Started process (PID=198579) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:27:33.197+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:27:33.198+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:27:33.198+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:27:33.206+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:27:33.221+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:27:33.221+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:27:33.227+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:27:33.227+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:27:33.246+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.056 seconds
+[2025-09-04T14:28:03.388+0000] {processor.py:186} INFO - Started process (PID=198634) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:28:03.390+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:28:03.392+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:28:03.391+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:28:03.399+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:28:03.416+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:28:03.416+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:28:03.424+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:28:03.424+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:28:03.442+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.059 seconds
+[2025-09-04T14:28:33.572+0000] {processor.py:186} INFO - Started process (PID=198691) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:28:33.573+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:28:33.574+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:28:33.574+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:28:33.583+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:28:33.599+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:28:33.599+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:28:33.607+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:28:33.606+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:28:33.622+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.054 seconds
+[2025-09-04T14:29:03.752+0000] {processor.py:186} INFO - Started process (PID=198752) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:29:03.754+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:29:03.755+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:29:03.755+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:29:03.764+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:29:03.780+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:29:03.780+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:29:03.789+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:29:03.789+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:29:03.806+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.058 seconds
+[2025-09-04T14:29:33.871+0000] {processor.py:186} INFO - Started process (PID=198831) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:29:33.874+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:29:33.875+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:29:33.875+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:29:33.883+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:29:33.900+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:29:33.900+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:29:33.909+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:29:33.908+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:29:33.925+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.058 seconds
+[2025-09-04T14:30:04.051+0000] {processor.py:186} INFO - Started process (PID=198927) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:30:04.053+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:30:04.054+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:30:04.054+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:30:04.062+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:30:04.077+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:30:04.077+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:30:04.085+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:30:04.084+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:30:04.098+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.051 seconds
+[2025-09-04T14:30:34.229+0000] {processor.py:186} INFO - Started process (PID=198994) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:30:34.232+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:30:34.233+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:30:34.233+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:30:34.242+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:30:34.257+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:30:34.257+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:30:34.265+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:30:34.265+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:30:34.281+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.056 seconds
+[2025-09-04T14:31:04.413+0000] {processor.py:186} INFO - Started process (PID=199059) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:31:04.415+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:31:04.417+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:31:04.417+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:31:04.427+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:31:04.442+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:31:04.441+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:31:04.449+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:31:04.449+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:31:04.465+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.056 seconds
+[2025-09-04T14:31:34.602+0000] {processor.py:186} INFO - Started process (PID=199124) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:31:34.605+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:31:34.607+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:31:34.606+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:31:34.616+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:31:34.634+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:31:34.634+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:31:34.644+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:31:34.643+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:31:34.670+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.072 seconds
+[2025-09-04T14:32:04.930+0000] {processor.py:186} INFO - Started process (PID=199179) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:32:04.931+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:32:04.933+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:32:04.933+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:32:04.942+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:32:04.959+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:32:04.959+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:32:04.968+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:32:04.968+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:32:04.985+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.060 seconds
+[2025-09-04T14:32:35.083+0000] {processor.py:186} INFO - Started process (PID=199244) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:32:35.086+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:32:35.087+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:32:35.087+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:32:35.096+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:32:35.114+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:32:35.113+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:32:35.123+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:32:35.123+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:32:35.140+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.062 seconds
+[2025-09-04T14:33:05.249+0000] {processor.py:186} INFO - Started process (PID=199313) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:33:05.252+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:33:05.254+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:33:05.253+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:33:05.261+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:33:05.277+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:33:05.276+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:33:05.285+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:33:05.285+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:33:05.300+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.054 seconds
+[2025-09-04T14:33:35.408+0000] {processor.py:186} INFO - Started process (PID=199368) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:33:35.411+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:33:35.412+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:33:35.412+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:33:35.421+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:33:35.438+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:33:35.438+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:33:35.447+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:33:35.447+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:33:35.463+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.060 seconds
+[2025-09-04T14:34:05.563+0000] {processor.py:186} INFO - Started process (PID=199429) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:34:05.566+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:34:05.567+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:34:05.567+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:34:05.575+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:34:05.592+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:34:05.592+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:34:05.601+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:34:05.601+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:34:05.617+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.057 seconds
+[2025-09-04T14:34:35.724+0000] {processor.py:186} INFO - Started process (PID=199478) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:34:35.727+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:34:35.729+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:34:35.729+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:34:35.738+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:34:35.760+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:34:35.760+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:34:35.770+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:34:35.770+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:34:35.791+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.076 seconds
+[2025-09-04T14:35:05.881+0000] {processor.py:186} INFO - Started process (PID=199539) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:35:05.883+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:35:05.885+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:35:05.885+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:35:05.895+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:35:05.912+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:35:05.912+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:35:05.922+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:35:05.922+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:35:05.946+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.070 seconds
+[2025-09-04T14:35:36.040+0000] {processor.py:186} INFO - Started process (PID=199594) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:35:36.041+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:35:36.042+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:35:36.042+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:35:36.049+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:35:36.064+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:35:36.064+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:35:36.072+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:35:36.072+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:35:36.087+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.052 seconds
+[2025-09-04T14:36:06.193+0000] {processor.py:186} INFO - Started process (PID=199649) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:36:06.195+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:36:06.197+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:36:06.197+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:36:06.205+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:36:06.223+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:36:06.223+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:36:06.230+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:36:06.230+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:36:06.244+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.056 seconds
+[2025-09-04T14:36:36.346+0000] {processor.py:186} INFO - Started process (PID=199710) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:36:36.348+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:36:36.350+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:36:36.349+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:36:36.360+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:36:36.375+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:36:36.375+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:36:36.383+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:36:36.383+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:36:36.398+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.056 seconds
+[2025-09-04T14:37:06.490+0000] {processor.py:186} INFO - Started process (PID=199759) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:37:06.492+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:37:06.494+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:37:06.494+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:37:06.501+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:37:06.516+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:37:06.516+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:37:06.523+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:37:06.523+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:37:06.539+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.053 seconds
+[2025-09-04T14:37:36.645+0000] {processor.py:186} INFO - Started process (PID=199825) to work on /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:37:36.647+0000] {processor.py:914} INFO - Processing file /home/projectuser/airflow/dags/dbt_auto_csv_dag.py for tasks to queue
+[2025-09-04T14:37:36.649+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:37:36.649+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:37:36.659+0000] {processor.py:925} INFO - DAG(s) 'dbt_auto_csv_pipeline' retrieved from /home/projectuser/airflow/dags/dbt_auto_csv_dag.py
+[2025-09-04T14:37:36.675+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:37:36.675+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-04T14:37:36.684+0000] {logging_mixin.py:190} INFO - [2025-09-04T14:37:36.684+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_auto_csv_pipeline to None, run_after=None
+[2025-09-04T14:37:36.701+0000] {processor.py:208} INFO - Processing /home/projectuser/airflow/dags/dbt_auto_csv_dag.py took 0.060 seconds

@@ -1,0 +1,117 @@
+[2025-09-04T14:31:49.161+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-04T14:31:49.193+0000] {taskinstance.py:2631} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [queued]>
+[2025-09-04T14:31:49.205+0000] {taskinstance.py:2631} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [queued]>
+[2025-09-04T14:31:49.205+0000] {taskinstance.py:2884} INFO - Starting attempt 3 of 3
+[2025-09-04T14:31:49.237+0000] {taskinstance.py:2907} INFO - Executing <Task(PythonOperator): generate_intelligent_models> on 2025-09-04 14:21:35.088825+00:00
+[2025-09-04T14:31:49.242+0000] {standard_task_runner.py:72} INFO - Started process 199146 to run task
+[2025-09-04T14:31:49.247+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'generate_intelligent_models', 'manual__2025-09-04T14:21:35.088825+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py', '--cfg-path', '/tmp/tmpiwd7u7v2']
+[2025-09-04T14:31:49.250+0000] {standard_task_runner.py:105} INFO - Job 6: Subtask generate_intelligent_models
+[2025-09-04T14:31:49.308+0000] {task_command.py:467} INFO - Running <TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [running]> on host INB-YVARADHARAJAN.Trellance.com
+[2025-09-04T14:31:49.375+0000] {taskinstance.py:3157} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineer' AIRFLOW_CTX_DAG_ID='dbt_auto_csv_pipeline' AIRFLOW_CTX_TASK_ID='generate_intelligent_models' AIRFLOW_CTX_EXECUTION_DATE='2025-09-04T14:21:35.088825+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-04T14:21:35.088825+00:00'
+[2025-09-04T14:31:49.375+0000] {taskinstance.py:740} INFO - ::endgroup::
+[2025-09-04T14:31:49.413+0000] {dbt_auto_csv_dag.py:37} ERROR - Model generation failed:   File "/home/projectuser/si-dbt-test/my_dbt_project/generate_intelligent_models.py", line 97
+    if '```
+       ^
+SyntaxError: unterminated string literal (detected at line 97)
+
+[2025-09-04T14:31:49.414+0000] {taskinstance.py:3336} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 776, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 742, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/airflow/dags/dbt_auto_csv_dag.py", line 38, in run_model_generation
+    raise Exception(f"Model generation failed: {result.stderr}")
+Exception: Model generation failed:   File "/home/projectuser/si-dbt-test/my_dbt_project/generate_intelligent_models.py", line 97
+    if '```
+       ^
+SyntaxError: unterminated string literal (detected at line 97)
+
+[2025-09-04T14:31:49.420+0000] {taskinstance.py:1242} INFO - Marking task as FAILED. dag_id=dbt_auto_csv_pipeline, task_id=generate_intelligent_models, run_id=manual__2025-09-04T14:21:35.088825+00:00, execution_date=20250904T142135, start_date=20250904T143149, end_date=20250904T143149
+[2025-09-04T14:31:49.442+0000] {taskinstance.py:349} INFO - ::group::Post task execution logs
+[2025-09-04T14:31:49.443+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 6 for task generate_intelligent_models (Model generation failed:   File "/home/projectuser/si-dbt-test/my_dbt_project/generate_intelligent_models.py", line 97
+    if '```
+       ^
+SyntaxError: unterminated string literal (detected at line 97)
+; 199146)
+Traceback (most recent call last):
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3029, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 282, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3184, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3208, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 776, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 742, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projectuser/airflow/dags/dbt_auto_csv_dag.py", line 38, in run_model_generation
+    raise Exception(f"Model generation failed: {result.stderr}")
+Exception: Model generation failed:   File "/home/projectuser/si-dbt-test/my_dbt_project/generate_intelligent_models.py", line 97
+    if '```
+       ^
+SyntaxError: unterminated string literal (detected at line 97)
+
+[2025-09-04T14:31:49.467+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-09-04T14:31:49.484+0000] {taskinstance.py:3924} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-04T14:31:49.492+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

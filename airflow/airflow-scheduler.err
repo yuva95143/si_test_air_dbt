@@ -1,0 +1,19 @@
+[2025-09-04 13:54:56 +0000] [193774] [INFO] Starting gunicorn 21.2.0
+[2025-09-04 13:54:56 +0000] [193774] [INFO] Listening at: http://[::]:8793 (193774)
+[2025-09-04 13:54:56 +0000] [193774] [INFO] Using worker: sync
+[2025-09-04 13:54:56 +0000] [193775] [INFO] Booting worker with pid: 193775
+[2025-09-04 13:54:56 +0000] [193777] [INFO] Booting worker with pid: 193777
+/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/metrics/base_stats_logger.py:22 RemovedInAirflow3Warning: Timer and timing metrics publish in seconds were deprecated. It is enabled by default from Airflow 3 onwards. Enable timer_unit_consistency to publish all the timer and timing metrics in milliseconds.
+/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/triggers/base.py:27 RemovedInAirflow3Warning: Timer and timing metrics publish in seconds were deprecated. It is enabled by default from Airflow 3 onwards. Enable timer_unit_consistency to publish all the timer and timing metrics in milliseconds.
+/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/metrics/base_stats_logger.py:22 RemovedInAirflow3Warning: Timer and timing metrics publish in seconds were deprecated. It is enabled by default from Airflow 3 onwards. Enable timer_unit_consistency to publish all the timer and timing metrics in milliseconds.
+/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/triggers/base.py:27 RemovedInAirflow3Warning: Timer and timing metrics publish in seconds were deprecated. It is enabled by default from Airflow 3 onwards. Enable timer_unit_consistency to publish all the timer and timing metrics in milliseconds.
+/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/metrics/base_stats_logger.py:22 RemovedInAirflow3Warning: Timer and timing metrics publish in seconds were deprecated. It is enabled by default from Airflow 3 onwards. Enable timer_unit_consistency to publish all the timer and timing metrics in milliseconds.
+/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/triggers/base.py:27 RemovedInAirflow3Warning: Timer and timing metrics publish in seconds were deprecated. It is enabled by default from Airflow 3 onwards. Enable timer_unit_consistency to publish all the timer and timing metrics in milliseconds.
+/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/metrics/base_stats_logger.py:22 RemovedInAirflow3Warning: Timer and timing metrics publish in seconds were deprecated. It is enabled by default from Airflow 3 onwards. Enable timer_unit_consistency to publish all the timer and timing metrics in milliseconds.
+/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/triggers/base.py:27 RemovedInAirflow3Warning: Timer and timing metrics publish in seconds were deprecated. It is enabled by default from Airflow 3 onwards. Enable timer_unit_consistency to publish all the timer and timing metrics in milliseconds.
+/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/metrics/base_stats_logger.py:22 RemovedInAirflow3Warning: Timer and timing metrics publish in seconds were deprecated. It is enabled by default from Airflow 3 onwards. Enable timer_unit_consistency to publish all the timer and timing metrics in milliseconds.
+/home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/airflow/triggers/base.py:27 RemovedInAirflow3Warning: Timer and timing metrics publish in seconds were deprecated. It is enabled by default from Airflow 3 onwards. Enable timer_unit_consistency to publish all the timer and timing metrics in milliseconds.
+[2025-09-04 14:37:45 +0000] [193774] [INFO] Handling signal: term
+[2025-09-04 14:37:45 +0000] [193777] [INFO] Worker exiting (pid: 193777)
+[2025-09-04 14:37:45 +0000] [193775] [INFO] Worker exiting (pid: 193775)
+[2025-09-04 14:37:45 +0000] [193774] [INFO] Shutting down: Master

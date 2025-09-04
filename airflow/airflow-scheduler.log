@@ -1,0 +1,76 @@
+2025-09-04 13:54:56,853 INFO - Loaded executor: SequentialExecutor
+2025-09-04 13:54:56,882 INFO - Starting the scheduler
+2025-09-04 13:54:56,883 INFO - Processing each file at most -1 times
+2025-09-04 13:54:56,887 INFO - Launched DagFileProcessorManager with pid: 193776
+2025-09-04 13:54:56,888 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-09-04 13:54:56,891 INFO - Configured default timezone UTC
+2025-09-04 13:59:56,926 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-09-04 14:04:56,953 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-09-04 14:09:56,983 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-09-04 14:14:57,008 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-09-04 14:19:57,034 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-09-04 14:21:37,342 INFO - 2 tasks up for execution:
+	<TaskInstance: dbt_auto_csv_pipeline.validate_environment manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>
+	<TaskInstance: dbt_auto_csv_pipeline.check_dbt_installation manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>
+2025-09-04 14:21:37,342 INFO - DAG dbt_auto_csv_pipeline has 0/16 running and queued tasks
+2025-09-04 14:21:37,342 INFO - DAG dbt_auto_csv_pipeline has 1/16 running and queued tasks
+2025-09-04 14:21:37,342 INFO - Setting the following tasks to queued state:
+	<TaskInstance: dbt_auto_csv_pipeline.validate_environment manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>
+	<TaskInstance: dbt_auto_csv_pipeline.check_dbt_installation manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>
+2025-09-04 14:21:37,344 INFO - Trying to enqueue tasks: [<TaskInstance: dbt_auto_csv_pipeline.validate_environment manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>, <TaskInstance: dbt_auto_csv_pipeline.check_dbt_installation manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-09-04 14:21:37,344 INFO - Sending TaskInstanceKey(dag_id='dbt_auto_csv_pipeline', task_id='validate_environment', run_id='manual__2025-09-04T14:21:35.088825+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 8 and queue default
+2025-09-04 14:21:37,344 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'validate_environment', 'manual__2025-09-04T14:21:35.088825+00:00', '--local', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py']
+2025-09-04 14:21:37,345 INFO - Sending TaskInstanceKey(dag_id='dbt_auto_csv_pipeline', task_id='check_dbt_installation', run_id='manual__2025-09-04T14:21:35.088825+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 8 and queue default
+2025-09-04 14:21:37,345 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'check_dbt_installation', 'manual__2025-09-04T14:21:35.088825+00:00', '--local', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py']
+2025-09-04 14:21:37,350 INFO - Executing command: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'validate_environment', 'manual__2025-09-04T14:21:35.088825+00:00', '--local', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py']
+2025-09-04 14:21:39,307 INFO - Executing command: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'check_dbt_installation', 'manual__2025-09-04T14:21:35.088825+00:00', '--local', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py']
+2025-09-04 14:21:42,729 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='dbt_auto_csv_pipeline', task_id='validate_environment', run_id='manual__2025-09-04T14:21:35.088825+00:00', try_number=1, map_index=-1)
+2025-09-04 14:21:42,729 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='dbt_auto_csv_pipeline', task_id='check_dbt_installation', run_id='manual__2025-09-04T14:21:35.088825+00:00', try_number=1, map_index=-1)
+2025-09-04 14:21:42,733 INFO - TaskInstance Finished: dag_id=dbt_auto_csv_pipeline, task_id=check_dbt_installation, run_id=manual__2025-09-04T14:21:35.088825+00:00, map_index=-1, run_start_date=2025-09-04 14:21:40.620569+00:00, run_end_date=2025-09-04 14:21:42.363304+00:00, run_duration=1.742735, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=2, job_id=3, pool=default_pool, queue=default, priority_weight=8, operator=PythonOperator, queued_dttm=2025-09-04 14:21:37.343307+00:00, queued_by_job_id=1, pid=197878
+2025-09-04 14:21:42,734 INFO - TaskInstance Finished: dag_id=dbt_auto_csv_pipeline, task_id=validate_environment, run_id=manual__2025-09-04T14:21:35.088825+00:00, map_index=-1, run_start_date=2025-09-04 14:21:38.714218+00:00, run_end_date=2025-09-04 14:21:38.889994+00:00, run_duration=0.175776, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=2, job_id=2, pool=default_pool, queue=default, priority_weight=8, operator=PythonOperator, queued_dttm=2025-09-04 14:21:37.343307+00:00, queued_by_job_id=1, pid=197869
+2025-09-04 14:21:42,782 INFO - 1 tasks up for execution:
+	<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>
+2025-09-04 14:21:42,783 INFO - DAG dbt_auto_csv_pipeline has 0/16 running and queued tasks
+2025-09-04 14:21:42,783 INFO - Setting the following tasks to queued state:
+	<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>
+2025-09-04 14:21:42,784 INFO - Trying to enqueue tasks: [<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-09-04 14:21:42,784 INFO - Sending TaskInstanceKey(dag_id='dbt_auto_csv_pipeline', task_id='generate_intelligent_models', run_id='manual__2025-09-04T14:21:35.088825+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 7 and queue default
+2025-09-04 14:21:42,785 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'generate_intelligent_models', 'manual__2025-09-04T14:21:35.088825+00:00', '--local', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py']
+2025-09-04 14:21:42,791 INFO - Executing command: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'generate_intelligent_models', 'manual__2025-09-04T14:21:35.088825+00:00', '--local', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py']
+2025-09-04 14:21:44,639 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='dbt_auto_csv_pipeline', task_id='generate_intelligent_models', run_id='manual__2025-09-04T14:21:35.088825+00:00', try_number=1, map_index=-1)
+2025-09-04 14:21:44,642 INFO - TaskInstance Finished: dag_id=dbt_auto_csv_pipeline, task_id=generate_intelligent_models, run_id=manual__2025-09-04T14:21:35.088825+00:00, map_index=-1, run_start_date=2025-09-04 14:21:44.114676+00:00, run_end_date=2025-09-04 14:21:44.268202+00:00, run_duration=0.153526, state=up_for_retry, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=2, job_id=4, pool=default_pool, queue=default, priority_weight=7, operator=PythonOperator, queued_dttm=2025-09-04 14:21:42.783658+00:00, queued_by_job_id=1, pid=197888
+2025-09-04 14:24:57,081 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-09-04 14:26:45,171 INFO - 1 tasks up for execution:
+	<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>
+2025-09-04 14:26:45,171 INFO - DAG dbt_auto_csv_pipeline has 0/16 running and queued tasks
+2025-09-04 14:26:45,172 INFO - Setting the following tasks to queued state:
+	<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>
+2025-09-04 14:26:45,172 INFO - Trying to enqueue tasks: [<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-09-04 14:26:45,173 INFO - Sending TaskInstanceKey(dag_id='dbt_auto_csv_pipeline', task_id='generate_intelligent_models', run_id='manual__2025-09-04T14:21:35.088825+00:00', try_number=2, map_index=-1) to SequentialExecutor with priority 7 and queue default
+2025-09-04 14:26:45,173 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'generate_intelligent_models', 'manual__2025-09-04T14:21:35.088825+00:00', '--local', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py']
+2025-09-04 14:26:45,177 INFO - Executing command: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'generate_intelligent_models', 'manual__2025-09-04T14:21:35.088825+00:00', '--local', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py']
+2025-09-04 14:26:47,336 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='dbt_auto_csv_pipeline', task_id='generate_intelligent_models', run_id='manual__2025-09-04T14:21:35.088825+00:00', try_number=2, map_index=-1)
+2025-09-04 14:26:47,340 INFO - TaskInstance Finished: dag_id=dbt_auto_csv_pipeline, task_id=generate_intelligent_models, run_id=manual__2025-09-04T14:21:35.088825+00:00, map_index=-1, run_start_date=2025-09-04 14:26:46.653336+00:00, run_end_date=2025-09-04 14:26:46.843343+00:00, run_duration=0.190007, state=up_for_retry, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=2, max_tries=2, job_id=5, pool=default_pool, queue=default, priority_weight=7, operator=PythonOperator, queued_dttm=2025-09-04 14:26:45.172365+00:00, queued_by_job_id=1, pid=198483
+2025-09-04 14:29:57,118 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-09-04 14:31:47,454 INFO - 1 tasks up for execution:
+	<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>
+2025-09-04 14:31:47,454 INFO - DAG dbt_auto_csv_pipeline has 0/16 running and queued tasks
+2025-09-04 14:31:47,454 INFO - Setting the following tasks to queued state:
+	<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>
+2025-09-04 14:31:47,455 INFO - Trying to enqueue tasks: [<TaskInstance: dbt_auto_csv_pipeline.generate_intelligent_models manual__2025-09-04T14:21:35.088825+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-09-04 14:31:47,455 INFO - Sending TaskInstanceKey(dag_id='dbt_auto_csv_pipeline', task_id='generate_intelligent_models', run_id='manual__2025-09-04T14:21:35.088825+00:00', try_number=3, map_index=-1) to SequentialExecutor with priority 7 and queue default
+2025-09-04 14:31:47,455 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'generate_intelligent_models', 'manual__2025-09-04T14:21:35.088825+00:00', '--local', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py']
+2025-09-04 14:31:47,462 INFO - Executing command: ['airflow', 'tasks', 'run', 'dbt_auto_csv_pipeline', 'generate_intelligent_models', 'manual__2025-09-04T14:21:35.088825+00:00', '--local', '--subdir', 'DAGS_FOLDER/dbt_auto_csv_dag.py']
+2025-09-04 14:31:49,896 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='dbt_auto_csv_pipeline', task_id='generate_intelligent_models', run_id='manual__2025-09-04T14:21:35.088825+00:00', try_number=3, map_index=-1)
+2025-09-04 14:31:49,900 INFO - TaskInstance Finished: dag_id=dbt_auto_csv_pipeline, task_id=generate_intelligent_models, run_id=manual__2025-09-04T14:21:35.088825+00:00, map_index=-1, run_start_date=2025-09-04 14:31:49.193949+00:00, run_end_date=2025-09-04 14:31:49.419799+00:00, run_duration=0.22585, state=failed, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=3, max_tries=2, job_id=6, pool=default_pool, queue=default, priority_weight=7, operator=PythonOperator, queued_dttm=2025-09-04 14:31:47.454878+00:00, queued_by_job_id=1, pid=199146
+2025-09-04 14:31:54,384 ERROR - Marking run <DagRun dbt_auto_csv_pipeline @ 2025-09-04 14:21:35.088825+00:00: manual__2025-09-04T14:21:35.088825+00:00, state:running, queued_at: 2025-09-04 14:21:35.108703+00:00. externally triggered: True> failed
+2025-09-04 14:31:54,385 INFO - DagRun Finished: dag_id=dbt_auto_csv_pipeline, execution_date=2025-09-04 14:21:35.088825+00:00, run_id=manual__2025-09-04T14:21:35.088825+00:00, run_start_date=2025-09-04 14:21:36.258204+00:00, run_end_date=2025-09-04 14:31:54.385058+00:00, run_duration=618.126854, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-09-04 14:21:35.088825+00:00, data_interval_end=2025-09-04 14:21:35.088825+00:00, dag_hash=11e1f37081fe35262f6fedc011e900d7
+2025-09-04 14:34:57,143 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-09-04 14:37:45,333 INFO - Exiting gracefully upon receiving signal 15
+2025-09-04 14:37:45,451 INFO - Sending 15 to group 193776. PIDs of all processes in the group: []
+2025-09-04 14:37:45,451 INFO - Sending the signal 15 to group 193776
+2025-09-04 14:37:45,451 INFO - Sending the signal 15 to process 193776 as process group is missing.
+2025-09-04 14:37:45,455 INFO - Sending 15 to group 193776. PIDs of all processes in the group: []
+2025-09-04 14:37:45,455 INFO - Sending the signal 15 to group 193776
+2025-09-04 14:37:45,456 INFO - Sending the signal 15 to process 193776 as process group is missing.
+2025-09-04 14:37:45,456 INFO - Exited execute loop

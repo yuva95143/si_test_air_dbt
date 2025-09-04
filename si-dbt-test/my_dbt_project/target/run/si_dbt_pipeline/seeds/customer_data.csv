@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table main."customer_data" (customer_id INT,customer_name TEXT,email TEXT,phone TEXT,registration_date TEXT,customer_type TEXT)
+  ;
+    -- dbt seed --
+    
+            insert into main.customer_data (customer_id, customer_name, email, phone, registration_date, customer_type) values
+            (?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?)
+        
+
+;
+  

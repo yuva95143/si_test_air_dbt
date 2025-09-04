@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "main"."sample_sales";
+    -- dbt seed --
+    
+            insert into main.sample_sales (id, customer_name, product, quantity, price, order_date) values
+            (?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?)
+        
+
+;
+  

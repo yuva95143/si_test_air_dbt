@@ -1,0 +1,749 @@
+[0m13:13:56.607364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2a7165c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2a7af6050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2a4c27d90>]}
+
+
+============================== 13:13:56.611447 | 10b4b6cd-8b6f-4174-968b-e13dc04bccfe ==============================
+[0m13:13:56.611447 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:13:56.612079 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/projectuser/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init --skip-profile-setup my_dbt_project', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:13:56.622247 [debug] [MainThread]: Starter project path: /home/projectuser/si-dbt-test/env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m13:13:56.625611 [info ] [MainThread]: 
+Your new dbt project "my_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:13:56.626699 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.07690058, "process_in_blocks": "0", "process_kernel_time": 0.120207, "process_mem_max_rss": "99280", "process_out_blocks": "64", "process_user_time": 1.182043}
+[0m13:13:56.627806 [debug] [MainThread]: Command `dbt init` succeeded at 13:13:56.627494 after 0.08 seconds
+[0m13:13:56.630592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2a4a10650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2a4a7f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2a9007ad0>]}
+[0m13:13:56.632187 [debug] [MainThread]: Flushing usage events
+[0m13:14:13.856902 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:23:37.128192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769ac63ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769ac63150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769acb3f10>]}
+
+
+============================== 13:23:37.130464 | df2c4b1f-6550-4d47-846d-061b7ab2dfd0 ==============================
+[0m13:23:37.130464 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:23:37.131248 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'profiles_dir': '/home/projectuser/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:23:37.139392 [info ] [MainThread]: dbt version: 1.9.0
+[0m13:23:37.139802 [info ] [MainThread]: python version: 3.11.9
+[0m13:23:37.140084 [info ] [MainThread]: python path: /home/projectuser/si-dbt-test/env/bin/python3.11
+[0m13:23:37.140336 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.41
+[0m13:23:37.154868 [info ] [MainThread]: Using profiles dir at /home/projectuser/.dbt
+[0m13:23:37.155243 [info ] [MainThread]: Using profiles.yml file at /home/projectuser/.dbt/profiles.yml
+[0m13:23:37.155461 [info ] [MainThread]: Using dbt_project.yml file at /home/projectuser/si-dbt-test/my_dbt_project/dbt_project.yml
+[0m13:23:37.221943 [info ] [MainThread]: Configuration:
+[0m13:23:37.222327 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:23:37.222541 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:23:37.222723 [info ] [MainThread]: Required dependencies:
+[0m13:23:37.222921 [debug] [MainThread]: Executing "git --help"
+[0m13:23:37.224630 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:23:37.224954 [debug] [MainThread]: STDERR: "b''"
+[0m13:23:37.225124 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:23:37.225357 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:23:37.225583 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:23:37.225795 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "si_dbt_test", target "dev" invalid: 'database' is a required property
+
+
+[0m13:23:37.226481 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.1323115, "process_in_blocks": "0", "process_kernel_time": 0.090296, "process_mem_max_rss": "102048", "process_out_blocks": "16", "process_user_time": 1.003293}
+[0m13:23:37.226866 [debug] [MainThread]: Command `dbt debug` failed at 13:23:37.226791 after 0.13 seconds
+[0m13:23:37.227153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769ac682d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769f3adb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769b9dec90>]}
+[0m13:23:37.227445 [debug] [MainThread]: Flushing usage events
+[0m13:23:38.145012 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:28:02.781374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f771da47190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f771d87f6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f771d87eed0>]}
+
+
+============================== 13:28:02.783457 | 1bd212c5-164a-4d17-8f99-4bcc3dc10fb9 ==============================
+[0m13:28:02.783457 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:28:02.785514 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'version_check': 'True', 'profiles_dir': '/home/projectuser/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:28:02.791933 [info ] [MainThread]: dbt version: 1.9.0
+[0m13:28:02.792333 [info ] [MainThread]: python version: 3.11.9
+[0m13:28:02.792855 [info ] [MainThread]: python path: /home/projectuser/si-dbt-test/env/bin/python3.11
+[0m13:28:02.793589 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.41
+[0m13:28:02.806976 [info ] [MainThread]: Using profiles dir at /home/projectuser/.dbt
+[0m13:28:02.807320 [info ] [MainThread]: Using profiles.yml file at /home/projectuser/.dbt/profiles.yml
+[0m13:28:02.807570 [info ] [MainThread]: Using dbt_project.yml file at /home/projectuser/si-dbt-test/my_dbt_project/dbt_project.yml
+[0m13:28:02.875463 [info ] [MainThread]: Configuration:
+[0m13:28:02.876198 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:28:02.876643 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:28:02.877215 [info ] [MainThread]: Required dependencies:
+[0m13:28:02.877912 [debug] [MainThread]: Executing "git --help"
+[0m13:28:02.880017 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:28:02.880400 [debug] [MainThread]: STDERR: "b''"
+[0m13:28:02.880626 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:28:02.880847 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:28:02.881047 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:28:02.881220 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "si_dbt_test", target "dev" invalid: 'schema' is a required property
+
+
+[0m13:28:02.881835 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.1358209, "process_in_blocks": "0", "process_kernel_time": 0.059698, "process_mem_max_rss": "102252", "process_out_blocks": "16", "process_user_time": 0.925322}
+[0m13:28:02.882224 [debug] [MainThread]: Command `dbt debug` failed at 13:28:02.882148 after 0.14 seconds
+[0m13:28:02.882468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f771d82c450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f771d8a3f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f771d8a3ed0>]}
+[0m13:28:02.882747 [debug] [MainThread]: Flushing usage events
+[0m13:28:03.826971 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:29:20.124446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe09f1abcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe09f3bf890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe09f1abd10>]}
+
+
+============================== 13:29:20.126630 | 5165dc3d-07a9-4691-9776-db8ea9b5d37f ==============================
+[0m13:29:20.126630 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:29:20.127016 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/projectuser/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:29:20.132735 [info ] [MainThread]: dbt version: 1.9.0
+[0m13:29:20.133338 [info ] [MainThread]: python version: 3.11.9
+[0m13:29:20.133747 [info ] [MainThread]: python path: /home/projectuser/si-dbt-test/env/bin/python3.11
+[0m13:29:20.134168 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.41
+[0m13:29:20.148765 [info ] [MainThread]: Using profiles dir at /home/projectuser/.dbt
+[0m13:29:20.149171 [info ] [MainThread]: Using profiles.yml file at /home/projectuser/.dbt/profiles.yml
+[0m13:29:20.149395 [info ] [MainThread]: Using dbt_project.yml file at /home/projectuser/si-dbt-test/my_dbt_project/dbt_project.yml
+[0m13:29:20.246742 [info ] [MainThread]: Configuration:
+[0m13:29:20.247204 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:29:20.247614 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:29:20.247877 [info ] [MainThread]: Required dependencies:
+[0m13:29:20.248109 [debug] [MainThread]: Executing "git --help"
+[0m13:29:20.249783 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:29:20.250201 [debug] [MainThread]: STDERR: "b''"
+[0m13:29:20.250405 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:29:20.250621 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:29:20.250825 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:29:20.251024 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "si_dbt_test", target "dev" invalid: 'schemas_and_paths' is a required property
+
+
+[0m13:29:20.251721 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.16092576, "process_in_blocks": "0", "process_kernel_time": 0.099811, "process_mem_max_rss": "101876", "process_out_blocks": "16", "process_user_time": 0.968171}
+[0m13:29:20.252159 [debug] [MainThread]: Command `dbt debug` failed at 13:29:20.252076 after 0.16 seconds
+[0m13:29:20.252447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe09f1b0590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe09f029d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe09f3bee50>]}
+[0m13:29:20.252742 [debug] [MainThread]: Flushing usage events
+[0m13:29:21.200226 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:34:03.171280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f513b1fef50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f513b1fffd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f513b1ffe50>]}
+
+
+============================== 13:34:03.173537 | 32fe7a05-ec16-41c0-9330-f61e5d2c3817 ==============================
+[0m13:34:03.173537 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:34:03.174166 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/projectuser/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:34:03.179679 [info ] [MainThread]: dbt version: 1.9.0
+[0m13:34:03.180159 [info ] [MainThread]: python version: 3.11.9
+[0m13:34:03.180472 [info ] [MainThread]: python path: /home/projectuser/si-dbt-test/env/bin/python3.11
+[0m13:34:03.180847 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.41
+[0m13:34:03.194414 [info ] [MainThread]: Using profiles dir at /home/projectuser/.dbt
+[0m13:34:03.195633 [info ] [MainThread]: Using profiles.yml file at /home/projectuser/.dbt/profiles.yml
+[0m13:34:03.196161 [info ] [MainThread]: Using dbt_project.yml file at /home/projectuser/si-dbt-test/my_dbt_project/dbt_project.yml
+[0m13:34:03.266938 [info ] [MainThread]: Configuration:
+[0m13:34:03.267321 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:34:03.267541 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:34:03.267728 [info ] [MainThread]: Required dependencies:
+[0m13:34:03.267926 [debug] [MainThread]: Executing "git --help"
+[0m13:34:03.269102 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:34:03.269376 [debug] [MainThread]: STDERR: "b''"
+[0m13:34:03.269544 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:34:03.269736 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:34:03.269935 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:34:03.270257 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "si_dbt_test", target "dev" invalid: 'database' is a required property
+
+
+[0m13:34:03.270828 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.13426204, "process_in_blocks": "0", "process_kernel_time": 0.069904, "process_mem_max_rss": "101708", "process_out_blocks": "16", "process_user_time": 0.958693}
+[0m13:34:03.271180 [debug] [MainThread]: Command `dbt debug` failed at 13:34:03.271109 after 0.13 seconds
+[0m13:34:03.271421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f513b204550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f513f951cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f513b50d610>]}
+[0m13:34:03.271679 [debug] [MainThread]: Flushing usage events
+[0m13:34:04.200243 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:35:14.636727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff26520b850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff26520b7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff265208950>]}
+
+
+============================== 13:35:14.639069 | bca8512d-506e-41de-b847-c8efc0dd527b ==============================
+[0m13:35:14.639069 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:35:14.639496 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'profiles_dir': '/home/projectuser/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:35:14.645234 [info ] [MainThread]: dbt version: 1.9.0
+[0m13:35:14.646012 [info ] [MainThread]: python version: 3.11.9
+[0m13:35:14.646476 [info ] [MainThread]: python path: /home/projectuser/si-dbt-test/env/bin/python3.11
+[0m13:35:14.646841 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.41
+[0m13:35:14.659532 [info ] [MainThread]: Using profiles dir at /home/projectuser/.dbt
+[0m13:35:14.659878 [info ] [MainThread]: Using profiles.yml file at /home/projectuser/.dbt/profiles.yml
+[0m13:35:14.660166 [info ] [MainThread]: Using dbt_project.yml file at /home/projectuser/si-dbt-test/my_dbt_project/dbt_project.yml
+[0m13:35:14.724215 [info ] [MainThread]: Configuration:
+[0m13:35:14.724608 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:35:14.724822 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:35:14.724989 [info ] [MainThread]: Required dependencies:
+[0m13:35:14.725187 [debug] [MainThread]: Executing "git --help"
+[0m13:35:14.726793 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:35:14.727127 [debug] [MainThread]: STDERR: "b''"
+[0m13:35:14.727320 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:35:14.727517 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:35:14.727706 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:35:14.727877 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "si_dbt_test", target "dev" invalid: 'schemas_and_paths' is a required property
+
+
+[0m13:35:14.728465 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.12509285, "process_in_blocks": "0", "process_kernel_time": 0.069873, "process_mem_max_rss": "102316", "process_out_blocks": "16", "process_user_time": 0.938295}
+[0m13:35:14.728841 [debug] [MainThread]: Command `dbt debug` failed at 13:35:14.728771 after 0.13 seconds
+[0m13:35:14.729087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff265210390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff26994dad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff267769c90>]}
+[0m13:35:14.729340 [debug] [MainThread]: Flushing usage events
+[0m13:35:15.634967 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:36:16.221220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d55f82610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d55f82850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d55f80b10>]}
+
+
+============================== 13:36:16.223801 | 9084e062-e00a-42b6-b21d-09a151524084 ==============================
+[0m13:36:16.223801 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:36:16.224227 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/projectuser/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:36:16.230199 [info ] [MainThread]: dbt version: 1.9.0
+[0m13:36:16.230797 [info ] [MainThread]: python version: 3.11.9
+[0m13:36:16.231095 [info ] [MainThread]: python path: /home/projectuser/si-dbt-test/env/bin/python3.11
+[0m13:36:16.231301 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.41
+[0m13:36:16.237948 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'projectuser'
+[0m13:36:16.238930 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.054204933, "process_in_blocks": "0", "process_kernel_time": 0.050319, "process_mem_max_rss": "99348", "process_out_blocks": "8", "process_user_time": 0.865498}
+[0m13:36:16.239514 [debug] [MainThread]: Command `dbt debug` failed at 13:36:16.239330 after 0.05 seconds
+[0m13:36:16.240144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d55f88450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d55f82a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d5a6c5cd0>]}
+[0m13:36:16.240478 [debug] [MainThread]: Flushing usage events
+[0m13:36:17.162348 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:47:33.125113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ae880fd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ae880ea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ae880cc50>]}
+
+
+============================== 13:47:33.128255 | 336a0672-ccd6-4009-90a5-5437a94107e8 ==============================
+[0m13:47:33.128255 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:47:33.128654 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/projectuser/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:47:33.135598 [info ] [MainThread]: dbt version: 1.9.0
+[0m13:47:33.136012 [info ] [MainThread]: python version: 3.11.9
+[0m13:47:33.136322 [info ] [MainThread]: python path: /home/projectuser/si-dbt-test/env/bin/python3.11
+[0m13:47:33.136558 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.41
+[0m13:47:33.152359 [info ] [MainThread]: Using profiles dir at /home/projectuser/.dbt
+[0m13:47:33.152786 [info ] [MainThread]: Using profiles.yml file at /home/projectuser/.dbt/profiles.yml
+[0m13:47:33.153013 [info ] [MainThread]: Using dbt_project.yml file at /home/projectuser/si-dbt-test/my_dbt_project/dbt_project.yml
+[0m13:47:33.153337 [info ] [MainThread]: adapter type: sqlite
+[0m13:47:33.153530 [info ] [MainThread]: adapter version: 1.9.1
+[0m13:47:33.226548 [info ] [MainThread]: Configuration:
+[0m13:47:33.227229 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:47:33.227662 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:47:33.228109 [info ] [MainThread]: Required dependencies:
+[0m13:47:33.228573 [debug] [MainThread]: Executing "git --help"
+[0m13:47:33.230249 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:47:33.230893 [debug] [MainThread]: STDERR: "b''"
+[0m13:47:33.231163 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:47:33.231407 [info ] [MainThread]: Connection:
+[0m13:47:33.231632 [info ] [MainThread]:   database: database
+[0m13:47:33.231813 [info ] [MainThread]:   schema: main
+[0m13:47:33.231991 [info ] [MainThread]:   schemas_and_paths: {'main': '/home/projectuser/si-dbt-test/my_dbt_project/dbt.sqlite'}
+[0m13:47:33.232179 [info ] [MainThread]:   schema_directory: /homeprojectuser/si-dbt-test/my_dbt_project
+[0m13:47:33.232493 [info ] [MainThread]: Registered adapter: sqlite=1.9.1
+[0m13:47:33.282530 [debug] [MainThread]: Acquiring new sqlite connection 'debug'
+[0m13:47:33.311517 [debug] [MainThread]: Using sqlite connection "debug"
+[0m13:47:33.311923 [debug] [MainThread]: On debug: select 1 as id
+[0m13:47:33.312175 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:47:33.313044 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m13:47:33.313791 [debug] [MainThread]: On debug: Close
+[0m13:47:33.314158 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:47:33.314432 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:47:33.315166 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.22732256, "process_in_blocks": "0", "process_kernel_time": 0.150904, "process_mem_max_rss": "107732", "process_out_blocks": "24", "process_user_time": 0.935607}
+[0m13:47:33.315601 [debug] [MainThread]: Command `dbt debug` succeeded at 13:47:33.315512 after 0.23 seconds
+[0m13:47:33.315862 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:47:33.316142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ae8d41710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ae8803f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aece047d0>]}
+[0m13:47:33.316448 [debug] [MainThread]: Flushing usage events
+[0m13:47:34.261303 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:53:26.168187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc8543f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc859d710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc859ce50>]}
+
+
+============================== 13:53:26.170229 | 9ee0c065-fbe6-45eb-bed2-e0542b7e1139 ==============================
+[0m13:53:26.170229 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:53:26.170603 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/projectuser/.dbt', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt seed', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:53:26.266478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9ee0c065-fbe6-45eb-bed2-e0542b7e1139', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc85417d0>]}
+[0m13:53:26.304730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9ee0c065-fbe6-45eb-bed2-e0542b7e1139', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc8aa6a50>]}
+[0m13:53:26.305408 [info ] [MainThread]: Registered adapter: sqlite=1.9.1
+[0m13:53:26.347029 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m13:53:26.347482 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:53:26.347767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9ee0c065-fbe6-45eb-bed2-e0542b7e1139', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc859d9d0>]}
+[0m13:53:27.011410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9ee0c065-fbe6-45eb-bed2-e0542b7e1139', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc66c85d0>]}
+[0m13:53:27.079621 [debug] [MainThread]: Wrote artifact WritableManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/manifest.json
+[0m13:53:27.084505 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/semantic_manifest.json
+[0m13:53:27.100323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9ee0c065-fbe6-45eb-bed2-e0542b7e1139', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc7fa7850>]}
+[0m13:53:27.100973 [info ] [MainThread]: Found 2 models, 1 seed, 413 macros
+[0m13:53:27.101492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ee0c065-fbe6-45eb-bed2-e0542b7e1139', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc666d510>]}
+[0m13:53:27.103523 [info ] [MainThread]: 
+[0m13:53:27.103996 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:53:27.104392 [info ] [MainThread]: 
+[0m13:53:27.105302 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m13:53:27.106772 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_database'
+[0m13:53:27.133325 [debug] [ThreadPool]: Using sqlite connection "list_database"
+[0m13:53:27.133724 [debug] [ThreadPool]: On list_database: BEGIN
+[0m13:53:27.133946 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:27.134500 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m13:53:27.134742 [debug] [ThreadPool]: Using sqlite connection "list_database"
+[0m13:53:27.134924 [debug] [ThreadPool]: On list_database: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "connection_name": "list_database"} */
+
+        pragma database_list
+    
+[0m13:53:27.135189 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:53:27.136060 [debug] [ThreadPool]: On list_database: ROLLBACK
+[0m13:53:27.136316 [debug] [ThreadPool]: On list_database: Close
+[0m13:53:27.140564 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_database, now list_database_main)
+[0m13:53:27.146013 [debug] [ThreadPool]: Using sqlite connection "list_database_main"
+[0m13:53:27.146391 [debug] [ThreadPool]: On list_database_main: BEGIN
+[0m13:53:27.146601 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:53:27.146975 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:53:27.147166 [debug] [ThreadPool]: Using sqlite connection "list_database_main"
+[0m13:53:27.147327 [debug] [ThreadPool]: On list_database_main: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "connection_name": "list_database_main"} */
+
+        pragma database_list
+    
+[0m13:53:27.147512 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:53:27.148403 [debug] [ThreadPool]: Using sqlite connection "list_database_main"
+[0m13:53:27.148618 [debug] [ThreadPool]: On list_database_main: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "connection_name": "list_database_main"} */
+
+            SELECT
+                'database' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m13:53:27.149276 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:53:27.149953 [debug] [ThreadPool]: On list_database_main: ROLLBACK
+[0m13:53:27.150196 [debug] [ThreadPool]: On list_database_main: Close
+[0m13:53:27.150783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ee0c065-fbe6-45eb-bed2-e0542b7e1139', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc666d150>]}
+[0m13:53:27.151135 [debug] [MainThread]: Using sqlite connection "master"
+[0m13:53:27.151327 [debug] [MainThread]: On master: BEGIN
+[0m13:53:27.151506 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:53:27.151857 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:53:27.152057 [debug] [MainThread]: On master: COMMIT
+[0m13:53:27.152240 [debug] [MainThread]: Using sqlite connection "master"
+[0m13:53:27.152404 [debug] [MainThread]: On master: COMMIT
+[0m13:53:27.152580 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:53:27.152749 [debug] [MainThread]: On master: Close
+[0m13:53:27.154453 [debug] [Thread-1 (]: Began running node seed.si_dbt_pipeline.sample_sales
+[0m13:53:27.154841 [info ] [Thread-1 (]: 1 of 1 START seed file main.sample_sales ....................................... [RUN]
+[0m13:53:27.155191 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_database_main, now seed.si_dbt_pipeline.sample_sales)
+[0m13:53:27.155422 [debug] [Thread-1 (]: Began compiling node seed.si_dbt_pipeline.sample_sales
+[0m13:53:27.155645 [debug] [Thread-1 (]: Began executing node seed.si_dbt_pipeline.sample_sales
+[0m13:53:27.173515 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.sample_sales"
+[0m13:53:27.173880 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: BEGIN
+[0m13:53:27.174115 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:53:27.174488 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:53:27.174751 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.sample_sales"
+[0m13:53:27.174947 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "node_id": "seed.si_dbt_pipeline.sample_sales"} */
+
+    create table main."sample_sales" (id INT,customer_name TEXT,product TEXT,quantity INT,price REAL,order_date TEXT)
+  
+[0m13:53:27.175575 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:53:27.185914 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.sample_sales"
+[0m13:53:27.186277 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: 
+            insert into main.sample_sales (id, customer_name, product, quantity, price, order_date) values
+            (?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?)
+        ...
+[0m13:53:27.186646 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:53:27.189783 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.si_dbt_pipeline.sample_sales"
+[0m13:53:27.204380 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: COMMIT
+[0m13:53:27.204751 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.sample_sales"
+[0m13:53:27.204991 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: COMMIT
+[0m13:53:27.214546 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m13:53:27.216083 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: Close
+[0m13:53:27.217670 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ee0c065-fbe6-45eb-bed2-e0542b7e1139', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc5d21650>]}
+[0m13:53:27.218124 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file main.sample_sales ................................... [[32mINSERT 4[0m in 0.06s]
+[0m13:53:27.218529 [debug] [Thread-1 (]: Finished running node seed.si_dbt_pipeline.sample_sales
+[0m13:53:27.219994 [debug] [MainThread]: Using sqlite connection "master"
+[0m13:53:27.220236 [debug] [MainThread]: On master: BEGIN
+[0m13:53:27.220419 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:53:27.220760 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:53:27.220948 [debug] [MainThread]: On master: COMMIT
+[0m13:53:27.221122 [debug] [MainThread]: Using sqlite connection "master"
+[0m13:53:27.221278 [debug] [MainThread]: On master: COMMIT
+[0m13:53:27.221453 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:53:27.221626 [debug] [MainThread]: On master: Close
+[0m13:53:27.221872 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:53:27.222031 [debug] [MainThread]: Connection 'seed.si_dbt_pipeline.sample_sales' was properly closed.
+[0m13:53:27.222201 [info ] [MainThread]: 
+[0m13:53:27.222400 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 0.12 seconds (0.12s).
+[0m13:53:27.222790 [debug] [MainThread]: Command end result
+[0m13:53:27.234793 [debug] [MainThread]: Wrote artifact WritableManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/manifest.json
+[0m13:53:27.235990 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/semantic_manifest.json
+[0m13:53:27.239780 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/projectuser/si-dbt-test/my_dbt_project/target/run_results.json
+[0m13:53:27.240048 [info ] [MainThread]: 
+[0m13:53:27.240327 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:53:27.240529 [info ] [MainThread]: 
+[0m13:53:27.240746 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m13:53:27.241303 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 1.1059281, "process_in_blocks": "0", "process_kernel_time": 0.140158, "process_mem_max_rss": "119268", "process_out_blocks": "2472", "process_user_time": 1.772001}
+[0m13:53:27.241741 [debug] [MainThread]: Command `dbt seed` succeeded at 13:53:27.241662 after 1.11 seconds
+[0m13:53:27.242005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bcce017d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bc875b690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bccb37ad0>]}
+[0m13:53:27.242253 [debug] [MainThread]: Flushing usage events
+[0m13:53:28.230015 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:53:41.312604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ece824d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ece8ca6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ece9df490>]}
+
+
+============================== 13:53:41.314592 | 945ac609-fbf0-4ea1-bf90-d78e847f0a6d ==============================
+[0m13:53:41.314592 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:53:41.314972 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/projectuser/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:53:41.398819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '945ac609-fbf0-4ea1-bf90-d78e847f0a6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ece659650>]}
+[0m13:53:41.435470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '945ac609-fbf0-4ea1-bf90-d78e847f0a6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8eced2e8d0>]}
+[0m13:53:41.436109 [info ] [MainThread]: Registered adapter: sqlite=1.9.1
+[0m13:53:41.471290 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m13:53:41.526348 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:53:41.526669 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:53:41.557009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '945ac609-fbf0-4ea1-bf90-d78e847f0a6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ece24ab50>]}
+[0m13:53:41.608873 [debug] [MainThread]: Wrote artifact WritableManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/manifest.json
+[0m13:53:41.611244 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/semantic_manifest.json
+[0m13:53:41.619359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '945ac609-fbf0-4ea1-bf90-d78e847f0a6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ece0fe510>]}
+[0m13:53:41.619758 [info ] [MainThread]: Found 2 models, 1 seed, 413 macros
+[0m13:53:41.620265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '945ac609-fbf0-4ea1-bf90-d78e847f0a6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ece687090>]}
+[0m13:53:41.621624 [info ] [MainThread]: 
+[0m13:53:41.621934 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:53:41.622160 [info ] [MainThread]: 
+[0m13:53:41.622527 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m13:53:41.626262 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_database'
+[0m13:53:41.648583 [debug] [ThreadPool]: Using sqlite connection "list_database"
+[0m13:53:41.648929 [debug] [ThreadPool]: On list_database: BEGIN
+[0m13:53:41.649144 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:41.649577 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:53:41.649785 [debug] [ThreadPool]: Using sqlite connection "list_database"
+[0m13:53:41.649973 [debug] [ThreadPool]: On list_database: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "connection_name": "list_database"} */
+
+        pragma database_list
+    
+[0m13:53:41.650168 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:53:41.650936 [debug] [ThreadPool]: On list_database: ROLLBACK
+[0m13:53:41.651170 [debug] [ThreadPool]: On list_database: Close
+[0m13:53:41.652276 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_database, now list_database_main)
+[0m13:53:41.656901 [debug] [ThreadPool]: Using sqlite connection "list_database_main"
+[0m13:53:41.657137 [debug] [ThreadPool]: On list_database_main: BEGIN
+[0m13:53:41.657320 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:53:41.657696 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:53:41.657900 [debug] [ThreadPool]: Using sqlite connection "list_database_main"
+[0m13:53:41.658075 [debug] [ThreadPool]: On list_database_main: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "connection_name": "list_database_main"} */
+
+        pragma database_list
+    
+[0m13:53:41.658278 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:53:41.659299 [debug] [ThreadPool]: Using sqlite connection "list_database_main"
+[0m13:53:41.659571 [debug] [ThreadPool]: On list_database_main: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "connection_name": "list_database_main"} */
+
+            SELECT
+                'database' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m13:53:41.659890 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:53:41.661071 [debug] [ThreadPool]: On list_database_main: ROLLBACK
+[0m13:53:41.661320 [debug] [ThreadPool]: On list_database_main: Close
+[0m13:53:41.662059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '945ac609-fbf0-4ea1-bf90-d78e847f0a6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ece131610>]}
+[0m13:53:41.662406 [debug] [MainThread]: Using sqlite connection "master"
+[0m13:53:41.662595 [debug] [MainThread]: On master: BEGIN
+[0m13:53:41.662756 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:53:41.663074 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:53:41.663276 [debug] [MainThread]: On master: COMMIT
+[0m13:53:41.663454 [debug] [MainThread]: Using sqlite connection "master"
+[0m13:53:41.663615 [debug] [MainThread]: On master: COMMIT
+[0m13:53:41.663790 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:53:41.663958 [debug] [MainThread]: On master: Close
+[0m13:53:41.666385 [debug] [Thread-1 (]: Began running node model.si_dbt_pipeline.stg_sample_sales
+[0m13:53:41.666789 [info ] [Thread-1 (]: 1 of 2 START sql view model main.stg_sample_sales .............................. [RUN]
+[0m13:53:41.667125 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_database_main, now model.si_dbt_pipeline.stg_sample_sales)
+[0m13:53:41.667354 [debug] [Thread-1 (]: Began compiling node model.si_dbt_pipeline.stg_sample_sales
+[0m13:53:41.672921 [debug] [Thread-1 (]: Writing injected SQL for node "model.si_dbt_pipeline.stg_sample_sales"
+[0m13:53:41.673830 [debug] [Thread-1 (]: Began executing node model.si_dbt_pipeline.stg_sample_sales
+[0m13:53:41.684169 [debug] [Thread-1 (]: Writing runtime sql for node "model.si_dbt_pipeline.stg_sample_sales"
+[0m13:53:41.685062 [debug] [Thread-1 (]: Using sqlite connection "model.si_dbt_pipeline.stg_sample_sales"
+[0m13:53:41.685346 [debug] [Thread-1 (]: On model.si_dbt_pipeline.stg_sample_sales: BEGIN
+[0m13:53:41.685558 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:53:41.685907 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:53:41.686130 [debug] [Thread-1 (]: Using sqlite connection "model.si_dbt_pipeline.stg_sample_sales"
+[0m13:53:41.686327 [debug] [Thread-1 (]: On model.si_dbt_pipeline.stg_sample_sales: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "node_id": "model.si_dbt_pipeline.stg_sample_sales"} */
+
+    
+    create view main."stg_sample_sales" as
+    -- Simple staging model for testing
+
+
+select
+    id,
+    customer_name,
+    product,
+    quantity,
+    price,
+    order_date,
+    quantity * price as total_amount
+from main."sample_sales";
+[0m13:53:41.686769 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:53:41.690063 [debug] [Thread-1 (]: On model.si_dbt_pipeline.stg_sample_sales: COMMIT
+[0m13:53:41.690321 [debug] [Thread-1 (]: Using sqlite connection "model.si_dbt_pipeline.stg_sample_sales"
+[0m13:53:41.690529 [debug] [Thread-1 (]: On model.si_dbt_pipeline.stg_sample_sales: COMMIT
+[0m13:53:41.695101 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m13:53:41.697228 [debug] [Thread-1 (]: On model.si_dbt_pipeline.stg_sample_sales: Close
+[0m13:53:41.698355 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '945ac609-fbf0-4ea1-bf90-d78e847f0a6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ecd509150>]}
+[0m13:53:41.698841 [info ] [Thread-1 (]: 1 of 2 OK created sql view model main.stg_sample_sales ......................... [[32mOK[0m in 0.03s]
+[0m13:53:41.699237 [debug] [Thread-1 (]: Finished running node model.si_dbt_pipeline.stg_sample_sales
+[0m13:53:41.700052 [debug] [Thread-1 (]: Began running node model.si_dbt_pipeline.analytics_sales_summary
+[0m13:53:41.700386 [info ] [Thread-1 (]: 2 of 2 START sql table model main.analytics_sales_summary ...................... [RUN]
+[0m13:53:41.700696 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.si_dbt_pipeline.stg_sample_sales, now model.si_dbt_pipeline.analytics_sales_summary)
+[0m13:53:41.700930 [debug] [Thread-1 (]: Began compiling node model.si_dbt_pipeline.analytics_sales_summary
+[0m13:53:41.702885 [debug] [Thread-1 (]: Writing injected SQL for node "model.si_dbt_pipeline.analytics_sales_summary"
+[0m13:53:41.703515 [debug] [Thread-1 (]: Began executing node model.si_dbt_pipeline.analytics_sales_summary
+[0m13:53:41.712028 [debug] [Thread-1 (]: Writing runtime sql for node "model.si_dbt_pipeline.analytics_sales_summary"
+[0m13:53:41.712810 [debug] [Thread-1 (]: Using sqlite connection "model.si_dbt_pipeline.analytics_sales_summary"
+[0m13:53:41.713206 [debug] [Thread-1 (]: On model.si_dbt_pipeline.analytics_sales_summary: BEGIN
+[0m13:53:41.713416 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:53:41.713779 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:53:41.714001 [debug] [Thread-1 (]: Using sqlite connection "model.si_dbt_pipeline.analytics_sales_summary"
+[0m13:53:41.714200 [debug] [Thread-1 (]: On model.si_dbt_pipeline.analytics_sales_summary: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "node_id": "model.si_dbt_pipeline.analytics_sales_summary"} */
+
+  
+    
+    
+    create  table main."analytics_sales_summary"
+    as
+        -- Simple analytics model
+
+
+select
+    product,
+    count(*) as order_count,
+    sum(quantity) as total_quantity,
+    sum(total_amount) as total_revenue,
+    avg(total_amount) as avg_order_value
+from main."stg_sample_sales"
+group by product
+
+  
+[0m13:53:41.714782 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:53:41.715605 [debug] [Thread-1 (]: On model.si_dbt_pipeline.analytics_sales_summary: COMMIT
+[0m13:53:41.715871 [debug] [Thread-1 (]: Using sqlite connection "model.si_dbt_pipeline.analytics_sales_summary"
+[0m13:53:41.716082 [debug] [Thread-1 (]: On model.si_dbt_pipeline.analytics_sales_summary: COMMIT
+[0m13:53:41.719452 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m13:53:41.720284 [debug] [Thread-1 (]: On model.si_dbt_pipeline.analytics_sales_summary: Close
+[0m13:53:41.720718 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '945ac609-fbf0-4ea1-bf90-d78e847f0a6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ecd69b890>]}
+[0m13:53:41.721165 [info ] [Thread-1 (]: 2 of 2 OK created sql table model main.analytics_sales_summary ................. [[32mOK[0m in 0.02s]
+[0m13:53:41.721529 [debug] [Thread-1 (]: Finished running node model.si_dbt_pipeline.analytics_sales_summary
+[0m13:53:41.722800 [debug] [MainThread]: Using sqlite connection "master"
+[0m13:53:41.723050 [debug] [MainThread]: On master: BEGIN
+[0m13:53:41.723235 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:53:41.723562 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:53:41.723766 [debug] [MainThread]: On master: COMMIT
+[0m13:53:41.723942 [debug] [MainThread]: Using sqlite connection "master"
+[0m13:53:41.724101 [debug] [MainThread]: On master: COMMIT
+[0m13:53:41.724277 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:53:41.724441 [debug] [MainThread]: On master: Close
+[0m13:53:41.724691 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:53:41.724851 [debug] [MainThread]: Connection 'model.si_dbt_pipeline.analytics_sales_summary' was properly closed.
+[0m13:53:41.725024 [info ] [MainThread]: 
+[0m13:53:41.725289 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m13:53:41.725813 [debug] [MainThread]: Command end result
+[0m13:53:41.737237 [debug] [MainThread]: Wrote artifact WritableManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/manifest.json
+[0m13:53:41.739182 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/semantic_manifest.json
+[0m13:53:41.744914 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/projectuser/si-dbt-test/my_dbt_project/target/run_results.json
+[0m13:53:41.745352 [info ] [MainThread]: 
+[0m13:53:41.745705 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:53:41.745956 [info ] [MainThread]: 
+[0m13:53:41.746207 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m13:53:41.747000 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.466199, "process_in_blocks": "0", "process_kernel_time": 0.090497, "process_mem_max_rss": "114784", "process_out_blocks": "1752", "process_user_time": 1.256909}
+[0m13:53:41.747479 [debug] [MainThread]: Command `dbt run` succeeded at 13:53:41.747399 after 0.47 seconds
+[0m13:53:41.747755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ed2dbbb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ed2f09ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ed2f09e10>]}
+[0m13:53:41.748020 [debug] [MainThread]: Flushing usage events
+[0m13:53:42.694094 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:53:54.212361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc16a3128d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc16a310ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc16a310b90>]}
+
+
+============================== 13:53:54.214825 | c6b6d2b0-7c6e-4855-829c-64ccbcb41e10 ==============================
+[0m13:53:54.214825 [info ] [MainThread]: Running with dbt=1.9.0
+[0m13:53:54.215270 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'debug': 'False', 'profiles_dir': '/home/projectuser/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:53:54.295629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c6b6d2b0-7c6e-4855-829c-64ccbcb41e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc16a266650>]}
+[0m13:53:54.333696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c6b6d2b0-7c6e-4855-829c-64ccbcb41e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc16a67ec10>]}
+[0m13:53:54.334339 [info ] [MainThread]: Registered adapter: sqlite=1.9.1
+[0m13:53:54.372497 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m13:53:54.425011 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:53:54.425282 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:53:54.445749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c6b6d2b0-7c6e-4855-829c-64ccbcb41e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc169da7290>]}
+[0m13:53:54.483564 [debug] [MainThread]: Wrote artifact WritableManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/manifest.json
+[0m13:53:54.486539 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/semantic_manifest.json
+[0m13:53:54.501806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c6b6d2b0-7c6e-4855-829c-64ccbcb41e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc169bbe410>]}
+[0m13:53:54.502197 [info ] [MainThread]: Found 2 models, 1 seed, 413 macros
+[0m13:53:54.502452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c6b6d2b0-7c6e-4855-829c-64ccbcb41e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc169d9ad10>]}
+[0m13:53:54.503640 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:53:54.505168 [debug] [MainThread]: Command end result
+[0m13:53:54.516903 [debug] [MainThread]: Wrote artifact WritableManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/manifest.json
+[0m13:53:54.518017 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/semantic_manifest.json
+[0m13:53:54.520213 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/projectuser/si-dbt-test/my_dbt_project/target/run_results.json
+[0m13:53:54.520938 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.34425008, "process_in_blocks": "0", "process_kernel_time": 0.09932, "process_mem_max_rss": "108836", "process_out_blocks": "1624", "process_user_time": 1.102462}
+[0m13:53:54.521376 [debug] [MainThread]: Command `dbt test` succeeded at 13:53:54.521285 after 0.34 seconds
+[0m13:53:54.521702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc16a347710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc16a181c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc16e8df7d0>]}
+[0m13:53:54.522059 [debug] [MainThread]: Flushing usage events
+[0m13:53:55.444867 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:13:26.395078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e02bf3790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e02bf3450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e02bf3650>]}
+
+
+============================== 14:13:26.398843 | 63f8121f-be81-4d61-8dbb-2e74711ad2b5 ==============================
+[0m14:13:26.398843 [info ] [MainThread]: Running with dbt=1.9.0
+[0m14:13:26.399625 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/projectuser/si-dbt-test/my_dbt_project/logs', 'debug': 'False', 'profiles_dir': '/home/projectuser/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:13:26.567006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '63f8121f-be81-4d61-8dbb-2e74711ad2b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e02b4f190>]}
+[0m14:13:26.634807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '63f8121f-be81-4d61-8dbb-2e74711ad2b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e03156910>]}
+[0m14:13:26.635734 [info ] [MainThread]: Registered adapter: sqlite=1.9.1
+[0m14:13:26.712869 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m14:13:26.852494 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:13:26.853347 [debug] [MainThread]: Partial parsing: added file: si_dbt_pipeline://seeds/customer_data.csv
+[0m14:13:27.157868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '63f8121f-be81-4d61-8dbb-2e74711ad2b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e02570710>]}
+[0m14:13:27.229879 [debug] [MainThread]: Wrote artifact WritableManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/manifest.json
+[0m14:13:27.234048 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/semantic_manifest.json
+[0m14:13:27.248388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '63f8121f-be81-4d61-8dbb-2e74711ad2b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e024c08d0>]}
+[0m14:13:27.249055 [info ] [MainThread]: Found 2 models, 2 seeds, 413 macros
+[0m14:13:27.249468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '63f8121f-be81-4d61-8dbb-2e74711ad2b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e025d0690>]}
+[0m14:13:27.252166 [info ] [MainThread]: 
+[0m14:13:27.252843 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:13:27.253192 [info ] [MainThread]: 
+[0m14:13:27.253844 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m14:13:27.259682 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_database'
+[0m14:13:27.296757 [debug] [ThreadPool]: Using sqlite connection "list_database"
+[0m14:13:27.297233 [debug] [ThreadPool]: On list_database: BEGIN
+[0m14:13:27.297541 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:13:27.298171 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:13:27.298480 [debug] [ThreadPool]: Using sqlite connection "list_database"
+[0m14:13:27.298744 [debug] [ThreadPool]: On list_database: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "connection_name": "list_database"} */
+
+        pragma database_list
+    
+[0m14:13:27.299046 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:13:27.300342 [debug] [ThreadPool]: On list_database: ROLLBACK
+[0m14:13:27.300843 [debug] [ThreadPool]: On list_database: Close
+[0m14:13:27.302872 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_database, now list_database_main)
+[0m14:13:27.311080 [debug] [ThreadPool]: Using sqlite connection "list_database_main"
+[0m14:13:27.312413 [debug] [ThreadPool]: On list_database_main: BEGIN
+[0m14:13:27.312757 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:13:27.313302 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:13:27.313643 [debug] [ThreadPool]: Using sqlite connection "list_database_main"
+[0m14:13:27.313922 [debug] [ThreadPool]: On list_database_main: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "connection_name": "list_database_main"} */
+
+        pragma database_list
+    
+[0m14:13:27.314243 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:13:27.315695 [debug] [ThreadPool]: Using sqlite connection "list_database_main"
+[0m14:13:27.316099 [debug] [ThreadPool]: On list_database_main: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "connection_name": "list_database_main"} */
+
+            SELECT
+                'database' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m14:13:27.316599 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:13:27.317772 [debug] [ThreadPool]: On list_database_main: ROLLBACK
+[0m14:13:27.318125 [debug] [ThreadPool]: On list_database_main: Close
+[0m14:13:27.319452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '63f8121f-be81-4d61-8dbb-2e74711ad2b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e02b01e10>]}
+[0m14:13:27.320014 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:13:27.320314 [debug] [MainThread]: On master: BEGIN
+[0m14:13:27.320678 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:13:27.321148 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:13:27.321475 [debug] [MainThread]: On master: COMMIT
+[0m14:13:27.321769 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:13:27.322022 [debug] [MainThread]: On master: COMMIT
+[0m14:13:27.322287 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:13:27.322682 [debug] [MainThread]: On master: Close
+[0m14:13:27.328607 [debug] [Thread-1 (]: Began running node seed.si_dbt_pipeline.customer_data
+[0m14:13:27.329322 [info ] [Thread-1 (]: 1 of 2 START seed file main.customer_data ...................................... [RUN]
+[0m14:13:27.329883 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_database_main, now seed.si_dbt_pipeline.customer_data)
+[0m14:13:27.330262 [debug] [Thread-1 (]: Began compiling node seed.si_dbt_pipeline.customer_data
+[0m14:13:27.330705 [debug] [Thread-1 (]: Began executing node seed.si_dbt_pipeline.customer_data
+[0m14:13:27.364716 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.customer_data"
+[0m14:13:27.365258 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.customer_data: BEGIN
+[0m14:13:27.365620 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:13:27.366158 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:13:27.366480 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.customer_data"
+[0m14:13:27.366796 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.customer_data: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "node_id": "seed.si_dbt_pipeline.customer_data"} */
+
+    create table main."customer_data" (customer_id INT,customer_name TEXT,email TEXT,phone TEXT,registration_date TEXT,customer_type TEXT)
+  
+[0m14:13:27.367423 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:13:27.384048 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.customer_data"
+[0m14:13:27.384560 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.customer_data: 
+            insert into main.customer_data (customer_id, customer_name, email, phone, registration_date, customer_type) values
+            (?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?)
+        ...
+[0m14:13:27.385016 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:13:27.390129 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.si_dbt_pipeline.customer_data"
+[0m14:13:27.408394 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.customer_data: COMMIT
+[0m14:13:27.409015 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.customer_data"
+[0m14:13:27.409415 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.customer_data: COMMIT
+[0m14:13:27.426410 [debug] [Thread-1 (]: SQL status: OK in 0.016 seconds
+[0m14:13:27.428479 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.customer_data: Close
+[0m14:13:27.430206 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '63f8121f-be81-4d61-8dbb-2e74711ad2b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e0184f1d0>]}
+[0m14:13:27.430787 [info ] [Thread-1 (]: 1 of 2 OK loaded seed file main.customer_data .................................. [[32mINSERT 5[0m in 0.10s]
+[0m14:13:27.431337 [debug] [Thread-1 (]: Finished running node seed.si_dbt_pipeline.customer_data
+[0m14:13:27.431809 [debug] [Thread-1 (]: Began running node seed.si_dbt_pipeline.sample_sales
+[0m14:13:27.432403 [info ] [Thread-1 (]: 2 of 2 START seed file main.sample_sales ....................................... [RUN]
+[0m14:13:27.432855 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.si_dbt_pipeline.customer_data, now seed.si_dbt_pipeline.sample_sales)
+[0m14:13:27.433197 [debug] [Thread-1 (]: Began compiling node seed.si_dbt_pipeline.sample_sales
+[0m14:13:27.433657 [debug] [Thread-1 (]: Began executing node seed.si_dbt_pipeline.sample_sales
+[0m14:13:27.449239 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.sample_sales"
+[0m14:13:27.449727 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: BEGIN
+[0m14:13:27.450241 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:13:27.450943 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:13:27.451383 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.sample_sales"
+[0m14:13:27.451811 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "si_dbt_test", "target_name": "dev", "node_id": "seed.si_dbt_pipeline.sample_sales"} */
+delete from "main"."sample_sales"
+[0m14:13:27.452530 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:13:27.457205 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.sample_sales"
+[0m14:13:27.457717 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: 
+            insert into main.sample_sales (id, customer_name, product, quantity, price, order_date) values
+            (?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?)
+        ...
+[0m14:13:27.458167 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:13:27.458781 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.si_dbt_pipeline.sample_sales"
+[0m14:13:27.462234 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: COMMIT
+[0m14:13:27.462816 [debug] [Thread-1 (]: Using sqlite connection "seed.si_dbt_pipeline.sample_sales"
+[0m14:13:27.463171 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: COMMIT
+[0m14:13:27.467638 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m14:13:27.468607 [debug] [Thread-1 (]: On seed.si_dbt_pipeline.sample_sales: Close
+[0m14:13:27.469281 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '63f8121f-be81-4d61-8dbb-2e74711ad2b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e0181cad0>]}
+[0m14:13:27.469821 [info ] [Thread-1 (]: 2 of 2 OK loaded seed file main.sample_sales ................................... [[32mINSERT 4[0m in 0.04s]
+[0m14:13:27.470425 [debug] [Thread-1 (]: Finished running node seed.si_dbt_pipeline.sample_sales
+[0m14:13:27.472582 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:13:27.473149 [debug] [MainThread]: On master: BEGIN
+[0m14:13:27.473500 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:13:27.473977 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:13:27.474269 [debug] [MainThread]: On master: COMMIT
+[0m14:13:27.474524 [debug] [MainThread]: Using sqlite connection "master"
+[0m14:13:27.474753 [debug] [MainThread]: On master: COMMIT
+[0m14:13:27.474998 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:13:27.475241 [debug] [MainThread]: On master: Close
+[0m14:13:27.475735 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:13:27.476042 [debug] [MainThread]: Connection 'seed.si_dbt_pipeline.sample_sales' was properly closed.
+[0m14:13:27.476361 [info ] [MainThread]: 
+[0m14:13:27.476703 [info ] [MainThread]: Finished running 2 seeds in 0 hours 0 minutes and 0.22 seconds (0.22s).
+[0m14:13:27.477540 [debug] [MainThread]: Command end result
+[0m14:13:27.495960 [debug] [MainThread]: Wrote artifact WritableManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/manifest.json
+[0m14:13:27.497665 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/projectuser/si-dbt-test/my_dbt_project/target/semantic_manifest.json
+[0m14:13:27.504246 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/projectuser/si-dbt-test/my_dbt_project/target/run_results.json
+[0m14:13:27.504666 [info ] [MainThread]: 
+[0m14:13:27.505106 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:13:27.505413 [info ] [MainThread]: 
+[0m14:13:27.505727 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m14:13:27.506599 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 1.1855603, "process_in_blocks": "1456", "process_kernel_time": 0.139438, "process_mem_max_rss": "118108", "process_out_blocks": "2544", "process_user_time": 2.499926}
+[0m14:13:27.507164 [debug] [MainThread]: Command `dbt seed` succeeded at 14:13:27.507055 after 1.19 seconds
+[0m14:13:27.507531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e02bf2b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e02bf2e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e071e79d0>]}
+[0m14:13:27.507943 [debug] [MainThread]: Flushing usage events
+[0m14:13:28.448085 [debug] [MainThread]: An error was encountered while trying to flush usage events
